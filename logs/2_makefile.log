@@ -1,0 +1,50 @@
+[ 14%] Building CXX object tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 28%] Linking CXX static library ../../../lib/libgtest.a
+[ 28%] Built target gtest
+[ 42%] Building CXX object tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 57%] Linking CXX static library ../../../lib/libgtest_main.a
+[ 57%] Built target gtest_main
+[ 71%] Building CXX object tests/CMakeFiles/tests.dir/PtrCStringVectorTests.cpp.o
+[ 85%] Building CXX object tests/CMakeFiles/tests.dir/__/PtrCStringVector.cpp.o
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In copy constructor ‘PtrCStringVector::PtrCStringVector(const PtrCStringVector&)’:
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:17:60: error: unused parameter ‘srcPtrCStringVector’ [-Werror=unused-parameter]
+   17 | PtrCStringVector::PtrCStringVector(const PtrCStringVector &srcPtrCStringVector): PtrCStringVector()
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector& PtrCStringVector::operator=(const PtrCStringVector&)’:
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:29:71: error: unused parameter ‘source’ [-Werror=unused-parameter]
+   29 | PtrCStringVector &PtrCStringVector::operator=(const PtrCStringVector &source)
+      |                                               ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector& PtrCStringVector::operator=(PtrCStringVector&&)’:
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:36:66: error: unused parameter ‘source’ [-Werror=unused-parameter]
+   36 | PtrCStringVector& PtrCStringVector::operator=(PtrCStringVector&& source)
+      |                                               ~~~~~~~~~~~~~~~~~~~^~~~~~
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘void PtrCStringVector::push_back(const char*)’:
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:43:46: error: unused parameter ‘text2Add’ [-Werror=unused-parameter]
+   43 | void PtrCStringVector::push_back(const char *text2Add)
+      |                                  ~~~~~~~~~~~~^~~~~~~~
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector PtrCStringVector::operator+(const PtrCStringVector&) const’:
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:49:70: error: unused parameter ‘anotherVector’ [-Werror=unused-parameter]
+   49 | PtrCStringVector PtrCStringVector::operator+(const PtrCStringVector &anotherVector) const
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘char* PtrCStringVector::operator[](std::size_t)’:
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:55:48: error: unused parameter ‘index’ [-Werror=unused-parameter]
+   55 | char *PtrCStringVector::operator[](std::size_t index)
+      |                                    ~~~~~~~~~~~~^~~~~
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘const char* PtrCStringVector::operator[](std::size_t) const’:
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:60:54: error: unused parameter ‘index’ [-Werror=unused-parameter]
+   60 | const char *PtrCStringVector::operator[](std::size_t index) const
+      |                                          ~~~~~~~~~~~~^~~~~
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector PtrCStringVector::operator&(const PtrCStringVector&) const’:
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:66:70: error: unused parameter ‘rhs’ [-Werror=unused-parameter]
+   66 | PtrCStringVector PtrCStringVector::operator&(const PtrCStringVector &rhs) const
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘void PtrCStringVector::reserve(std::size_t)’:
+/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:77:44: error: unused parameter ‘new_capacity’ [-Werror=unused-parameter]
+   77 | void PtrCStringVector::reserve(std::size_t new_capacity)
+      |                                ~~~~~~~~~~~~^~~~~~~~~~~~
+cc1plus: all warnings being treated as errors
+make[3]: *** [tests/CMakeFiles/tests.dir/build.make:90: tests/CMakeFiles/tests.dir/__/PtrCStringVector.cpp.o] Error 1
+make[3]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/Makefile2:454: tests/CMakeFiles/tests.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:461: tests/CMakeFiles/tests.dir/rule] Error 2
+make: *** [Makefile:312: tests] Error 2
