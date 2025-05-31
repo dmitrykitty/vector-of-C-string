@@ -1,0 +1,222 @@
+{
+  "tests": 20,
+  "failures": 0,
+  "disabled": 0,
+  "errors": 0,
+  "timestamp": "2025-05-31T18:55:28Z",
+  "time": "1.003s",
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "PtrCStringVectorTester",
+      "tests": 20,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2025-05-31T18:55:28Z",
+      "time": "1.003s",
+      "testsuite": [
+        {
+          "name": "defaultConstructor_sizeOfEmptyContainerIsZero",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 32,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "pushBack_sizeOfContainerIncreaseAfterCallingPushBack",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 40,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "arrayIndexingOperator_testsInTheSamePositionsAsPushed",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 61,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "arrayIndexingOperator_throwingExceptionWhenOutOfRange",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 87,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "copyConstructor_textsDeeplyCopied",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 104,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "assignmentOperator_copyingContainerDeeply",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 141,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "assignmentOperator_assignmentCascadeAtOnceExpectingDeepCopyMultipleTimesEvenWithItselve",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 180,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "assignmentOperator_movingTextFromAnotherContainer",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 211,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "addOperator_expectReturningContainerContainingAllElementsFromAddedContainers",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 247,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "bitAndOperator_expectReturningContainerContainingMergedTextsFromCorrespondingPositionsAddedContainers",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 295,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "antytest1",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 346,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0.061s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "antytest2",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 357,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0.06s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "antytest3",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 375,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0.251s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "antytest4",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 394,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0.021s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "antytest5",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 408,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "antytest6",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 419,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0.002s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "antytest7",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 433,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0.127s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "antytest8",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 449,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:28Z",
+          "time": "0.236s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "antytest9",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 464,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:29Z",
+          "time": "0.158s",
+          "classname": "PtrCStringVectorTester"
+        },
+        {
+          "name": "antytest10",
+          "file": "\/tmp\/tmp8749kh0k\/student\/tests\/PtrCStringVectorTests.cpp",
+          "line": 480,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-05-31T18:55:29Z",
+          "time": "0.08s",
+          "classname": "PtrCStringVectorTester"
+        }
+      ]
+    }
+  ]
+}

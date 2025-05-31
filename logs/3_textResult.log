@@ -1,0 +1,49 @@
+Running main() from /tmp/tmp8749kh0k/student/tests/lib/googletest/src/gtest_main.cc
+[==========] Running 20 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 20 tests from PtrCStringVectorTester
+[ RUN      ] PtrCStringVectorTester.defaultConstructor_sizeOfEmptyContainerIsZero
+[       OK ] PtrCStringVectorTester.defaultConstructor_sizeOfEmptyContainerIsZero (0 ms)
+[ RUN      ] PtrCStringVectorTester.pushBack_sizeOfContainerIncreaseAfterCallingPushBack
+[       OK ] PtrCStringVectorTester.pushBack_sizeOfContainerIncreaseAfterCallingPushBack (0 ms)
+[ RUN      ] PtrCStringVectorTester.arrayIndexingOperator_testsInTheSamePositionsAsPushed
+[       OK ] PtrCStringVectorTester.arrayIndexingOperator_testsInTheSamePositionsAsPushed (0 ms)
+[ RUN      ] PtrCStringVectorTester.arrayIndexingOperator_throwingExceptionWhenOutOfRange
+[       OK ] PtrCStringVectorTester.arrayIndexingOperator_throwingExceptionWhenOutOfRange (0 ms)
+[ RUN      ] PtrCStringVectorTester.copyConstructor_textsDeeplyCopied
+[       OK ] PtrCStringVectorTester.copyConstructor_textsDeeplyCopied (0 ms)
+[ RUN      ] PtrCStringVectorTester.assignmentOperator_copyingContainerDeeply
+[       OK ] PtrCStringVectorTester.assignmentOperator_copyingContainerDeeply (0 ms)
+[ RUN      ] PtrCStringVectorTester.assignmentOperator_assignmentCascadeAtOnceExpectingDeepCopyMultipleTimesEvenWithItselve
+[       OK ] PtrCStringVectorTester.assignmentOperator_assignmentCascadeAtOnceExpectingDeepCopyMultipleTimesEvenWithItselve (0 ms)
+[ RUN      ] PtrCStringVectorTester.assignmentOperator_movingTextFromAnotherContainer
+[       OK ] PtrCStringVectorTester.assignmentOperator_movingTextFromAnotherContainer (0 ms)
+[ RUN      ] PtrCStringVectorTester.addOperator_expectReturningContainerContainingAllElementsFromAddedContainers
+[       OK ] PtrCStringVectorTester.addOperator_expectReturningContainerContainingAllElementsFromAddedContainers (0 ms)
+[ RUN      ] PtrCStringVectorTester.bitAndOperator_expectReturningContainerContainingMergedTextsFromCorrespondingPositionsAddedContainers
+[       OK ] PtrCStringVectorTester.bitAndOperator_expectReturningContainerContainingMergedTextsFromCorrespondingPositionsAddedContainers (0 ms)
+[ RUN      ] PtrCStringVectorTester.antytest1
+[       OK ] PtrCStringVectorTester.antytest1 (61 ms)
+[ RUN      ] PtrCStringVectorTester.antytest2
+[       OK ] PtrCStringVectorTester.antytest2 (60 ms)
+[ RUN      ] PtrCStringVectorTester.antytest3
+[       OK ] PtrCStringVectorTester.antytest3 (251 ms)
+[ RUN      ] PtrCStringVectorTester.antytest4
+[       OK ] PtrCStringVectorTester.antytest4 (21 ms)
+[ RUN      ] PtrCStringVectorTester.antytest5
+[       OK ] PtrCStringVectorTester.antytest5 (0 ms)
+[ RUN      ] PtrCStringVectorTester.antytest6
+[       OK ] PtrCStringVectorTester.antytest6 (2 ms)
+[ RUN      ] PtrCStringVectorTester.antytest7
+[       OK ] PtrCStringVectorTester.antytest7 (127 ms)
+[ RUN      ] PtrCStringVectorTester.antytest8
+[       OK ] PtrCStringVectorTester.antytest8 (236 ms)
+[ RUN      ] PtrCStringVectorTester.antytest9
+[       OK ] PtrCStringVectorTester.antytest9 (158 ms)
+[ RUN      ] PtrCStringVectorTester.antytest10
+[       OK ] PtrCStringVectorTester.antytest10 (80 ms)
+[----------] 20 tests from PtrCStringVectorTester (1003 ms total)
+
+[----------] Global test environment tear-down
+[==========] 20 tests from 1 test suite ran. (1003 ms total)
+[  PASSED  ] 20 tests.

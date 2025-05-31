@@ -4,15 +4,7 @@
 [ 42%] Building CXX object tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 [ 57%] Linking CXX static library ../../../lib/libgtest_main.a
 [ 57%] Built target gtest_main
-[ 71%] Building CXX object tests/CMakeFiles/tests.dir/PtrCStringVectorTests.cpp.o
 [ 85%] Building CXX object tests/CMakeFiles/tests.dir/__/PtrCStringVector.cpp.o
-/tmp/tmpfukou51t/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector PtrCStringVector::operator&(const PtrCStringVector&) const’:
-/tmp/tmpfukou51t/student/PtrCStringVector.cpp:109:70: error: unused parameter ‘rhs’ [-Werror=unused-parameter]
-  109 | PtrCStringVector PtrCStringVector::operator&(const PtrCStringVector& rhs) const {
-      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~^~~
-cc1plus: all warnings being treated as errors
-make[3]: *** [tests/CMakeFiles/tests.dir/build.make:90: tests/CMakeFiles/tests.dir/__/PtrCStringVector.cpp.o] Error 1
-make[3]: *** Waiting for unfinished jobs....
-make[2]: *** [CMakeFiles/Makefile2:454: tests/CMakeFiles/tests.dir/all] Error 2
-make[1]: *** [CMakeFiles/Makefile2:461: tests/CMakeFiles/tests.dir/rule] Error 2
-make: *** [Makefile:312: tests] Error 2
+[ 85%] Building CXX object tests/CMakeFiles/tests.dir/PtrCStringVectorTests.cpp.o
+[100%] Linking CXX executable ../bin/tests
+[100%] Built target tests

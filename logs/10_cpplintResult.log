@@ -1,0 +1,74 @@
+make: Entering directory '/tmp/tmp8749kh0k/student/build'
+make[1]: Entering directory '/tmp/tmp8749kh0k/student/build'
+make[2]: Entering directory '/tmp/tmp8749kh0k/student/build'
+make[3]: Entering directory '/tmp/tmp8749kh0k/student/build'
+make[3]: Leaving directory '/tmp/tmp8749kh0k/student/build'
+make[3]: Entering directory '/tmp/tmp8749kh0k/student/build'
+[100%] Running cpplint to check for tabs and trailing whitespace
+/tmp/tmp8749kh0k/student/PtrCStringVector.cpp:6:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.cpp:16:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.cpp:31:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.cpp:32:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.cpp:66:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.cpp:99:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.cpp:120:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.cpp:124:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.cpp:136:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:4:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:33:  public: should be indented +1 space inside class PtrCStringVector  [whitespace/indent] [3]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:35:  public: should be indented +1 space inside class iterator  [whitespace/indent] [3]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:42:  private: should be indented +1 space inside class iterator  [whitespace/indent] [3]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:45:  public: should be indented +1 space inside class iterator  [whitespace/indent] [3]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:46:  Missing space before {  [whitespace/braces] [5]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:47:  Missing space before {  [whitespace/braces] [5]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:49:  Missing space before {  [whitespace/braces] [5]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:50:  Missing space before {  [whitespace/braces] [5]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:76:  Redundant blank line at the end of a code block should be deleted.  [whitespace/blank_line] [3]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:79:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:82:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:88:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:90:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:93:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:106:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:121:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:129:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:148:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:154:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:162:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:187:  protected: should be indented +1 space inside class PtrCStringVector  [whitespace/indent] [3]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:187:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:188:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:191:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:198:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp8749kh0k/student/PtrCStringVector.h:201:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+/tmp/tmp8749kh0k/student/main.cpp:10:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/main.cpp:10:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+/tmp/tmp8749kh0k/student/main.cpp:16:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp8749kh0k/student/main.cpp:20:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/main.cpp:25:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp8749kh0k/student/main.cpp:30:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp8749kh0k/student/main.cpp:31:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/main.cpp:31:  Missing spaces around <=  [whitespace/operators] [3]
+/tmp/tmp8749kh0k/student/main.cpp:35:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp8749kh0k/student/main.cpp:39:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/main.cpp:40:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp8749kh0k/student/main.cpp:48:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp8749kh0k/student/main.cpp:49:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/main.cpp:50:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/main.cpp:52:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/main.cpp:53:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/main.cpp:55:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/main.cpp:56:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp8749kh0k/student/main.cpp:57:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+Done processing /tmp/tmp8749kh0k/student/PtrCStringVector.cpp
+Done processing /tmp/tmp8749kh0k/student/PtrCStringVector.h
+Done processing /tmp/tmp8749kh0k/student/main.cpp
+Total errors found: 55
+make[3]: *** [CMakeFiles/cpplint.dir/build.make:71: CMakeFiles/cpplint] Error 1
+make[3]: Leaving directory '/tmp/tmp8749kh0k/student/build'
+make[2]: *** [CMakeFiles/Makefile2:375: CMakeFiles/cpplint.dir/all] Error 2
+make[2]: Leaving directory '/tmp/tmp8749kh0k/student/build'
+make[1]: *** [CMakeFiles/Makefile2:382: CMakeFiles/cpplint.dir/rule] Error 2
+make[1]: Leaving directory '/tmp/tmp8749kh0k/student/build'
+make: *** [Makefile:273: cpplint] Error 2
+make: Leaving directory '/tmp/tmp8749kh0k/student/build'
