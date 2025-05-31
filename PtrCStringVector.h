@@ -43,11 +43,11 @@ public:
         pointer ptr_;
 
     public:
-        iterator(): ptr_(nullptr){}
-        iterator(pointer p): ptr_(p){}
+        iterator(): ptr_(nullptr) {}
+        iterator(pointer p): ptr_(p) {}
 
-        reference operator*() const{ return *ptr_; }
-        pointer operator->() const{ return ptr_; }
+        reference operator*() const { return *ptr_; }
+        pointer operator->() const { return ptr_; }
 
         iterator& operator++() {
             ++ptr_;
@@ -71,10 +71,29 @@ public:
             return temp;
         }
 
+        iterator operator+(different_type n) const { return {ptr_ + n}; }
+        iterator operator-(different_type n) const { return {ptr_ - n}; }
+        different_type operator-(const iterator& other) const { return ptr_ - other.ptr_; }
 
+        iterator& operator+=(different_type n) {
+            ptr_ += n;
+            return *this;
+        }
 
+        iterator& operator-=(different_type n) {
+            ptr_ -= n;
+            return *this;
+        }
 
+        reference operator[](different_type n) const { return *(ptr_ + n); }
+
+        std::strong_ordering operator<=>(const iterator& other) const { return ptr_ <=> other.ptr_; }
+
+        bool operator==(const iterator&) const = default;
     };
+
+    iterator begin() { return {data_}; }
+    iterator end() { return {data_ + size_}; }
 
     /** @brief konstruktor domyslny, jego zadaniem jest ustawienie size_, capacity_ i data_ na brak elementow **/
     PtrCStringVector();
