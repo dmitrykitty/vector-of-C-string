@@ -26,23 +26,70 @@
  * @param capacity_ ilosc zaallokowanej pamieci w kontenerze na elementy, wywolania `push_back` w razie potrzeby maja dokonac reallokacji powiekszajacej
  * @param data_ dynamicznie allokowana tablica wskaznikow do niemodyfikowalnych tekstow **/
 class PtrCStringVector {
-
     std::size_t size_;
     std::size_t capacity_;
     char** data_;
 
 public:
+    class iterator {
+    public:
+        using iterator_category = std::contiguous_iterator_tag;
+        using value_type = char *;
+        using reference = char *&;
+        using pointer = char **;
+        using different_type = std::ptrdiff_t;
+
+    private:
+        pointer ptr_;
+
+    public:
+        iterator(): ptr_(nullptr){}
+        iterator(pointer p): ptr_(p){}
+
+        reference operator*() const{ return *ptr_; }
+        pointer operator->() const{ return ptr_; }
+
+        iterator& operator++() {
+            ++ptr_;
+            return *this;
+        }
+
+        iterator operator++(int) {
+            iterator temp = *this;
+            ++*this;
+            return temp;
+        }
+
+        iterator& operator--() {
+            --ptr_;
+            return *this;
+        }
+
+        iterator operator--(int) {
+            iterator temp = *this;
+            --*this;
+            return temp;
+        }
+
+
+
+
+    };
+
     /** @brief konstruktor domyslny, jego zadaniem jest ustawienie size_, capacity_ i data_ na brak elementow **/
     PtrCStringVector();
+
     //IMPLEMENTED
 
     /** @brief konstruktor kopiujacy, dokonujacy **gleboka kopie**, czyli nie tylko tablica wskaznikow na tekst musi zostac skopiowana ale rowniez wszystkie wskazywane teksty
      *  @param source - kontener zrodkowy, z ktorego musza byc skopiowane wszystkie dane **/
     PtrCStringVector(const PtrCStringVector& source);
+
     //IMPLEMENTED
 
     /** @brief destruktor, ktory musi koniecznie zwolnic pamiec i inne zasoby **/
     ~PtrCStringVector();
+
     //IMPLEMENTED
 
 
@@ -55,6 +102,7 @@ public:
         @details Operator przypisania przenoszacy powinien **zwolnic dotychczasowa pamiec**, aby nie dopuscic do wyciekow pamieci.
             Powinien tez zostawic obiekt zrodlowy w stanie jak po zawolaniu konstruktora domyslnego. **/
     PtrCStringVector& operator=(PtrCStringVector&& source) noexcept;
+
     //IMPLEMENTED
 
     /** @brief operator przypisania, ktory ma za zadanie skopiowac doglebnie tresc, analogicznie jak konstruktor kopiujacy \ref PtrCStringVector(const PtrCStringVector&)
@@ -69,6 +117,7 @@ public:
         @endcode
         @details Operator przypisania powinien **zwolnic pamiec** w razie potrzeby, aby nie dopuscic do wyciekow pamieci. **/
     PtrCStringVector& operator=(const PtrCStringVector& source);
+
     //IMPLEMENTED
 
 
@@ -76,6 +125,7 @@ public:
      *  @param text2Add - tekst do skopiowania doglebnie (na nowa dynamiczna pamiec)
      *  @post Dodany tekst zostanie skopiowany i umieszczony na koncu kontenera. W razie potrzeby tablica wskaznikow powinna byc powiekszona. */
     void push_back(const char* text2Add);
+
     //IMPLEMENTED
 
     /** @brief Metoda zwracajaca aktualnie posiadana ilosc elementow w kontenerze.
@@ -94,11 +144,13 @@ public:
      *  @param index elementu tekstowego w kontenerze
      *  @throw std::out_of_range w razie, gdy `index >= size_` **/
     char* operator[](std::size_t index);
+
     //IMPLEMENTED
 
     /** @brief operator indeksowania, podobny do powyzszego @ref operator[], ale zwraca `const char*` i jest metoda stala
      *  @throw std::out_of_range w razie, gdy `index >= size_` **/
     const char* operator[](std::size_t index) const;
+
     //IMPLEMENTED
 
     /** @brief operator, ktory tworzy kontener zawierajacy wszystkie elementy z dowoch kontenerow (czyli dodaje kontenery)
@@ -106,6 +158,7 @@ public:
      *  @return nowo-utworzony kontener zawierajacy wszystkie elementy z `*this` i `anotherVector`
      *  @details wpierw beda skopiowane elementy z `*this`, nastepnie wszystkie z `anotherVector` */
     PtrCStringVector operator+(const PtrCStringVector& anotherVector) const;
+
     //IMPLEMENTED
 
     /** @brief operator& - ma za zadanie zwrocic nowo-utworzony kontener, ktory bedzie zawieral zawartosc obydwu kontenerow poprzez sklejenie tekstow na odpowiadajacych sobie pozycjach
@@ -134,12 +187,14 @@ public:
 protected: // methods:
     /** @brief metoda pomocnicza zwalniajaca wszystkie zasoby i zerujaca skladowe klasy **/
     void free();
+
     //IMPLEMENTED
 
     /** @brief metoda pomocnicza dokonujaca allokacji dynamicznej tablicy o okreslonym rozmiarze, nastepnie kopiujaca wszystkie elementy z dotychczasowej tablicy.
      *  @note nalezy pamietac o zwalnianiu zasobow
      *  @details dla uproszczenia zakladamy, ze metoda ta jedynie zwieksza zaalokowana pamiec, nie zmniejsza **/
     void reserve(std::size_t new_size);
+
     //IMPLEMENTED
 };
 

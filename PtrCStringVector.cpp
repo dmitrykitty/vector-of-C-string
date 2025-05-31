@@ -7,8 +7,23 @@
 #include "PtrCStringVector.h"
 
 #include <iostream>
-using namespace std;
 
+char* sumCString(const char* str1, const char* str2) {
+    if (!str1)
+        str1 = "";
+    if (!str2)
+        str2 = "";
+    //sprawdzenie na nullptr
+
+    std::size_t lenStr1 = strlen(str1);
+    std::size_t lenStr2 = strlen(str2);
+
+    char* res = new char[lenStr1 + lenStr2 + 1];
+    memcpy(res, str1, lenStr1);
+    memcpy(res + lenStr1, str2, lenStr2 + 1);
+
+    return res;
+}
 
 PtrCStringVector::PtrCStringVector(): size_(0), capacity_(0), data_(nullptr) {}
 
@@ -106,9 +121,34 @@ const char* PtrCStringVector::operator[](std::size_t index) const {
     return data_[index];
 }
 
-PtrCStringVector PtrCStringVector::operator&(const PtrCStringVector& rhs) const {
-    /// @todo zaimplementuj, szczegoly w pliku naglowkowym
-    return {};
+PtrCStringVector PtrCStringVector::operator&(const PtrCStringVector& other) const {
+    PtrCStringVector res;
+    res.reserve(std::max(size_, other.size_));
+
+    std::size_t index = 0;
+
+    while (index < size_ && index < other.size_) {
+        try {
+            char* stringSum = sumCString(data_[index], other.data_[index]);
+            res.push_back(stringSum);
+            delete[] stringSum;
+        } catch (const std::bad_alloc& e) {
+            std::cerr << "operator&: memory allocate error at index " << index << ": " << e.what() << "\n";
+            return {};
+        }
+        index++;
+    }
+
+    while (index < size_) {
+        res.push_back(data_[index]);
+        ++index;
+    }
+
+    while (index < other.size()) {
+        res.push_back(other.data_[index]);
+        ++index;
+    }
+    return res;
 }
 
 void PtrCStringVector::free() {
