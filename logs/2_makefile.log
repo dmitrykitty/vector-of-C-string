@@ -6,41 +6,37 @@
 [ 57%] Built target gtest_main
 [ 71%] Building CXX object tests/CMakeFiles/tests.dir/PtrCStringVectorTests.cpp.o
 [ 85%] Building CXX object tests/CMakeFiles/tests.dir/__/PtrCStringVector.cpp.o
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In copy constructor ‘PtrCStringVector::PtrCStringVector(const PtrCStringVector&)’:
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:17:60: error: unused parameter ‘srcPtrCStringVector’ [-Werror=unused-parameter]
-   17 | PtrCStringVector::PtrCStringVector(const PtrCStringVector &srcPtrCStringVector): PtrCStringVector()
-      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector& PtrCStringVector::operator=(const PtrCStringVector&)’:
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:29:71: error: unused parameter ‘source’ [-Werror=unused-parameter]
-   29 | PtrCStringVector &PtrCStringVector::operator=(const PtrCStringVector &source)
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector& PtrCStringVector::operator=(const PtrCStringVector&)’:
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp:30:71: error: unused parameter ‘source’ [-Werror=unused-parameter]
+   30 | PtrCStringVector& PtrCStringVector::operator=(const PtrCStringVector& source) {
       |                                               ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector& PtrCStringVector::operator=(PtrCStringVector&&)’:
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:36:66: error: unused parameter ‘source’ [-Werror=unused-parameter]
-   36 | PtrCStringVector& PtrCStringVector::operator=(PtrCStringVector&& source)
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector& PtrCStringVector::operator=(PtrCStringVector&&)’:
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp:36:66: error: unused parameter ‘source’ [-Werror=unused-parameter]
+   36 | PtrCStringVector& PtrCStringVector::operator=(PtrCStringVector&& source) {
       |                                               ~~~~~~~~~~~~~~~~~~~^~~~~~
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘void PtrCStringVector::push_back(const char*)’:
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:43:46: error: unused parameter ‘text2Add’ [-Werror=unused-parameter]
-   43 | void PtrCStringVector::push_back(const char *text2Add)
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp: In member function ‘void PtrCStringVector::push_back(const char*)’:
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp:42:46: error: unused parameter ‘text2Add’ [-Werror=unused-parameter]
+   42 | void PtrCStringVector::push_back(const char* text2Add) {
       |                                  ~~~~~~~~~~~~^~~~~~~~
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector PtrCStringVector::operator+(const PtrCStringVector&) const’:
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:49:70: error: unused parameter ‘anotherVector’ [-Werror=unused-parameter]
-   49 | PtrCStringVector PtrCStringVector::operator+(const PtrCStringVector &anotherVector) const
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector PtrCStringVector::operator+(const PtrCStringVector&) const’:
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp:46:70: error: unused parameter ‘anotherVector’ [-Werror=unused-parameter]
+   46 | PtrCStringVector PtrCStringVector::operator+(const PtrCStringVector& anotherVector) const {
       |                                              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘char* PtrCStringVector::operator[](std::size_t)’:
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:55:48: error: unused parameter ‘index’ [-Werror=unused-parameter]
-   55 | char *PtrCStringVector::operator[](std::size_t index)
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp: In member function ‘char* PtrCStringVector::operator[](std::size_t)’:
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp:51:48: error: unused parameter ‘index’ [-Werror=unused-parameter]
+   51 | char* PtrCStringVector::operator[](std::size_t index) {
       |                                    ~~~~~~~~~~~~^~~~~
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘const char* PtrCStringVector::operator[](std::size_t) const’:
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:60:54: error: unused parameter ‘index’ [-Werror=unused-parameter]
-   60 | const char *PtrCStringVector::operator[](std::size_t index) const
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp: In member function ‘const char* PtrCStringVector::operator[](std::size_t) const’:
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp:56:54: error: unused parameter ‘index’ [-Werror=unused-parameter]
+   56 | const char* PtrCStringVector::operator[](std::size_t index) const {
       |                                          ~~~~~~~~~~~~^~~~~
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector PtrCStringVector::operator&(const PtrCStringVector&) const’:
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:66:70: error: unused parameter ‘rhs’ [-Werror=unused-parameter]
-   66 | PtrCStringVector PtrCStringVector::operator&(const PtrCStringVector &rhs) const
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp: In member function ‘PtrCStringVector PtrCStringVector::operator&(const PtrCStringVector&) const’:
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp:61:70: error: unused parameter ‘rhs’ [-Werror=unused-parameter]
+   61 | PtrCStringVector PtrCStringVector::operator&(const PtrCStringVector& rhs) const {
       |                                              ~~~~~~~~~~~~~~~~~~~~~~~~^~~
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp: In member function ‘void PtrCStringVector::reserve(std::size_t)’:
-/tmp/tmp_t_bxy8e/student/PtrCStringVector.cpp:77:44: error: unused parameter ‘new_capacity’ [-Werror=unused-parameter]
-   77 | void PtrCStringVector::reserve(std::size_t new_capacity)
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp: In member function ‘void PtrCStringVector::reserve(std::size_t)’:
+/tmp/tmp5hbvundn/student/PtrCStringVector.cpp:70:44: error: unused parameter ‘new_capacity’ [-Werror=unused-parameter]
+   70 | void PtrCStringVector::reserve(std::size_t new_capacity) {
       |                                ~~~~~~~~~~~~^~~~~~~~~~~~
 cc1plus: all warnings being treated as errors
 make[3]: *** [tests/CMakeFiles/tests.dir/build.make:90: tests/CMakeFiles/tests.dir/__/PtrCStringVector.cpp.o] Error 1
