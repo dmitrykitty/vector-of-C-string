@@ -2,3 +2,7 @@
 13	2625	7704072264798782	tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	1fe012e19de604fd
 18	3392	7704072264849807	tests/CMakeFiles/tests.dir/PtrCStringVectorTests.cpp.obj	2c1e27e660ed6cb8
 5	11623	7704072264723477	tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	c0c8dfadc8a32c0d
+17	2454	7704101500671243	tests/CMakeFiles/tests.dir/PtrCStringVectorTests.cpp.obj	2c1e27e660ed6cb8
+11	4348	7704101500600010	lib/libgtest.a	333d1a8d0adacef3
+23	135	7704162199553680	lib/libgtest_main.a	c4a01d130be89dbb
+13	2275	7704162199453469	tests/CMakeFiles/tests.dir/PtrCStringVectorTests.cpp.obj	2c1e27e660ed6cb8

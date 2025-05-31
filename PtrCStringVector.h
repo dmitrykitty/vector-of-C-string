@@ -34,13 +34,16 @@ class PtrCStringVector {
 public:
     /** @brief konstruktor domyslny, jego zadaniem jest ustawienie size_, capacity_ i data_ na brak elementow **/
     PtrCStringVector();
+    //IMPLEMENTED
 
     /** @brief konstruktor kopiujacy, dokonujacy **gleboka kopie**, czyli nie tylko tablica wskaznikow na tekst musi zostac skopiowana ale rowniez wszystkie wskazywane teksty
      *  @param source - kontener zrodkowy, z ktorego musza byc skopiowane wszystkie dane **/
     PtrCStringVector(const PtrCStringVector& source);
+    //IMPLEMENTED
 
     /** @brief destruktor, ktory musi koniecznie zwolnic pamiec i inne zasoby **/
     ~PtrCStringVector();
+    //IMPLEMENTED
 
 
     /** @brief operator przypisania, ktory ma za zadanie przeniesc zawartosc z obiektu zrodlowego
@@ -51,7 +54,8 @@ public:
         @endcode
         @details Operator przypisania przenoszacy powinien **zwolnic dotychczasowa pamiec**, aby nie dopuscic do wyciekow pamieci.
             Powinien tez zostawic obiekt zrodlowy w stanie jak po zawolaniu konstruktora domyslnego. **/
-    PtrCStringVector& operator=(PtrCStringVector&& source);
+    PtrCStringVector& operator=(PtrCStringVector&& source) noexcept;
+    //IMPLEMENTED
 
     /** @brief operator przypisania, ktory ma za zadanie skopiowac doglebnie tresc, analogicznie jak konstruktor kopiujacy \ref PtrCStringVector(const PtrCStringVector&)
      *  @note prosze sie upewnic, ze zadziala przypisanie na samego siebie: @code{.cpp}
@@ -65,22 +69,24 @@ public:
         @endcode
         @details Operator przypisania powinien **zwolnic pamiec** w razie potrzeby, aby nie dopuscic do wyciekow pamieci. **/
     PtrCStringVector& operator=(const PtrCStringVector& source);
+    //IMPLEMENTED
 
 
     /** @brief metoda, ktora skopiuje podany tekst i umiesci na koncu w Vectorze. W razie braku miejsca powinna dokonac powiekszenia kontenera.
      *  @param text2Add - tekst do skopiowania doglebnie (na nowa dynamiczna pamiec)
      *  @post Dodany tekst zostanie skopiowany i umieszczony na koncu kontenera. W razie potrzeby tablica wskaznikow powinna byc powiekszona. */
     void push_back(const char* text2Add);
+    //IMPLEMENTED
 
     /** @brief Metoda zwracajaca aktualnie posiadana ilosc elementow w kontenerze.
      *  @return wartosc `size_` */
-    auto size() const {
+    [[nodiscard]] auto size() const {
         return size_;
     }
 
     /** @brief Metoda zwracajaca informacje ile elementow zmiesci sie w zaalokowanej tablicy.
      *  @return wartosc `capacity_` */
-    auto capacity() const {
+    [[nodiscard]] auto capacity() const {
         return capacity_;
     }
 
@@ -88,16 +94,19 @@ public:
      *  @param index elementu tekstowego w kontenerze
      *  @throw std::out_of_range w razie, gdy `index >= size_` **/
     char* operator[](std::size_t index);
+    //IMPLEMENTED
 
     /** @brief operator indeksowania, podobny do powyzszego @ref operator[], ale zwraca `const char*` i jest metoda stala
      *  @throw std::out_of_range w razie, gdy `index >= size_` **/
     const char* operator[](std::size_t index) const;
+    //IMPLEMENTED
 
     /** @brief operator, ktory tworzy kontener zawierajacy wszystkie elementy z dowoch kontenerow (czyli dodaje kontenery)
      *  @param anotherVector kontener z ktorego maja byc dorzucone elementy
      *  @return nowo-utworzony kontener zawierajacy wszystkie elementy z `*this` i `anotherVector`
      *  @details wpierw beda skopiowane elementy z `*this`, nastepnie wszystkie z `anotherVector` */
     PtrCStringVector operator+(const PtrCStringVector& anotherVector) const;
+    //IMPLEMENTED
 
     /** @brief operator& - ma za zadanie zwrocic nowo-utworzony kontener, ktory bedzie zawieral zawartosc obydwu kontenerow poprzez sklejenie tekstow na odpowiadajacych sobie pozycjach
      *  @param anotherVector kontener z ktorego maja byc doklejone elementy do tych z `*this`
@@ -125,11 +134,13 @@ public:
 protected: // methods:
     /** @brief metoda pomocnicza zwalniajaca wszystkie zasoby i zerujaca skladowe klasy **/
     void free();
+    //IMPLEMENTED
 
     /** @brief metoda pomocnicza dokonujaca allokacji dynamicznej tablicy o okreslonym rozmiarze, nastepnie kopiujaca wszystkie elementy z dotychczasowej tablicy.
      *  @note nalezy pamietac o zwalnianiu zasobow
      *  @details dla uproszczenia zakladamy, ze metoda ta jedynie zwieksza zaalokowana pamiec, nie zmniejsza **/
     void reserve(std::size_t new_size);
+    //IMPLEMENTED
 };
 
 #endif // MYSTRING_H
