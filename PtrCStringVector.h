@@ -25,8 +25,12 @@
  * @param size_ ilosc elementow w kontenerze, tworzac pusty ma byc 0, po kazdym zawolaniu `push_back` powinno byc o jeden wiecej
  * @param capacity_ ilosc zaallokowanej pamieci w kontenerze na elementy, wywolania `push_back` w razie potrzeby maja dokonac reallokacji powiekszajacej
  * @param data_ dynamicznie allokowana tablica wskaznikow do niemodyfikowalnych tekstow **/
-class PtrCStringVector
-{
+class PtrCStringVector {
+
+    std::size_t size_;
+    std::size_t capacity_;
+    char** data_;
+
 public:
     /** @brief konstruktor domyslny, jego zadaniem jest ustawienie size_, capacity_ i data_ na brak elementow **/
     PtrCStringVector();
@@ -70,15 +74,13 @@ public:
 
     /** @brief Metoda zwracajaca aktualnie posiadana ilosc elementow w kontenerze.
      *  @return wartosc `size_` */
-    auto size() const
-    {
+    auto size() const {
         return size_;
     }
 
     /** @brief Metoda zwracajaca informacje ile elementow zmiesci sie w zaalokowanej tablicy.
      *  @return wartosc `capacity_` */
-    auto capacity() const
-    {
+    auto capacity() const {
         return capacity_;
     }
 
@@ -128,11 +130,6 @@ protected: // methods:
      *  @note nalezy pamietac o zwalnianiu zasobow
      *  @details dla uproszczenia zakladamy, ze metoda ta jedynie zwieksza zaalokowana pamiec, nie zmniejsza **/
     void reserve(std::size_t new_size);
-
-private: // fields:
-    std::size_t size_;
-    std::size_t capacity_;
-    char** data_;
 };
 
 #endif // MYSTRING_H
